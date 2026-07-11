@@ -59,3 +59,78 @@ else{
     `;
 
 }
+function showSuggested(){
+
+    application.innerHTML = `
+
+        <h2>Suggested Course Sequence</h2>
+
+        <p>
+            Customize this sequence before finalizing.
+        </p>
+
+        <ul>
+            ${degree.suggested.map(function(course){
+                return `<li>${course}</li>`;
+            }).join("")}
+        </ul>
+
+
+        <button>
+            Finalize Degree Plan
+        </button>
+
+    `;
+
+}
+
+
+
+function showCustom(){
+
+    application.innerHTML = `
+
+        <h2>Create Your Course Sequence</h2>
+
+
+        <p>
+            Enter your courses:
+        </p>
+
+
+        <label>
+            Course 1:
+            <input type="text">
+        </label>
+
+        <br><br>
+
+        <label>
+            Course 2:
+            <input type="text">
+        </label>
+
+        <br><br>
+
+        <label>
+            Course 3:
+            <input type="text">
+        </label>
+
+        <br><br>
+
+        <label>
+            Course 4:
+            <input type="text">
+        </label>
+
+
+        <br><br>
+
+        <button>
+            Finalize Degree Plan
+        </button>
+
+    `;
+
+}
