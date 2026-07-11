@@ -1,4 +1,3 @@
-alert("catalog.js is working!");
 
 const catalog = document.getElementById("catalog");
 
