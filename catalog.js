@@ -1,26 +1,66 @@
 
 const catalog = document.getElementById("catalog");
 
-degrees.forEach(function(degree) {
 
-    const card = document.createElement("div");
+showLevels();
 
-    card.className = "degreeCard";
 
-    card.innerHTML = `
-        <h3>${degree.level} of ${degree.type}</h3>
+function showLevels(){
 
-        <h2>${degree.degree}</h2>
+    catalog.innerHTML = `
+        <h3>Select Degree Level</h3>
 
-        <p><strong>${degree.college}</strong></p>
+        <button onclick="showColleges('Associate')">
+            Associate
+        </button>
 
-        <p>${degree.description}</p>
+        <button onclick="showColleges('Bachelor')">
+            Bachelor
+        </button>
 
-        <p><strong>${degree.books}</strong> Books Required</p>
+        <button onclick="showColleges('Master')">
+            Master
+        </button>
 
-        <button>View Degree</button>
+        <button onclick="showColleges('Doctorate')">
+            Doctorate
+        </button>
     `;
 
-    catalog.appendChild(card);
+}
 
-});
+
+function showColleges(level){
+
+    let availableColleges = [];
+
+    degrees.forEach(function(degree){
+
+        if(degree.level === level){
+
+            if(!availableColleges.includes(degree.college)){
+                availableColleges.push(degree.college);
+            }
+
+        }
+
+    });
+
+
+    catalog.innerHTML = `
+        <h3>${level} Degree Programs</h3>
+        <p>Select a college:</p>
+    `;
+
+
+    availableColleges.forEach(function(college){
+
+        catalog.innerHTML += `
+            <button onclick="showDegrees('${level}', '${college}')">
+                ${college}
+            </button>
+        `;
+
+    });
+
+}
