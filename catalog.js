@@ -50,6 +50,10 @@ function showColleges(level){
     catalog.innerHTML = `
         <h3>${level} Degree Programs</h3>
         <p>Select a college:</p>
+
+        <button onclick="showLevels()">
+            ← Back to Degree Levels
+        </button>
     `;
 
 
@@ -85,6 +89,11 @@ function showDegrees(level, college){
     catalog.innerHTML = `
         <h3>${level} Degrees</h3>
         <h4>${college}</h4>
+
+        <button onclick="showColleges('$
+    {level}')">
+            ← Back to Colleges
+        </button>
     `;
 
 
