@@ -64,3 +64,63 @@ function showColleges(level){
     });
 
 }
+function showDegrees(level, college){
+
+    let matchingDegrees = [];
+
+    degrees.forEach(function(degree){
+
+        if(
+            degree.level === level &&
+            degree.college === college
+        ){
+
+            matchingDegrees.push(degree);
+
+        }
+
+    });
+
+
+    catalog.innerHTML = `
+        <h3>${level} Degrees</h3>
+        <h4>${college}</h4>
+    `;
+
+
+    matchingDegrees.forEach(function(degree){
+
+        catalog.innerHTML += `
+
+        <div class="degreeCard">
+
+            <h2>
+                ${degree.level} of ${degree.type}
+            </h2>
+
+            <h3>
+                ${degree.degree}
+            </h3>
+
+            <p>
+                ${degree.description}
+            </p>
+
+            <p>
+                <strong>
+                ${degree.books}
+                </strong>
+                books required
+            </p>
+
+            <button>
+                View Degree
+            </button>
+
+        </div>
+
+        `;
+
+    });
+
+}
