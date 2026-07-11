@@ -2,7 +2,7 @@ alert("catalog.js is working!");
 
 const catalog = document.getElementById("catalog");
 
-degreeCatalog.forEach(function(degree) {
+degrees.forEach(function(degree) {
 
     const card = document.createElement("div");
 
