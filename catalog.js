@@ -124,3 +124,6 @@ function showDegrees(level, college){
     });
 
 }
+window.showLevels = showLevels;
+window.showColleges = showColleges;
+window.showDegrees = showDegrees;
