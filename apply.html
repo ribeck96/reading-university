@@ -9,75 +9,15 @@
 
 <body>
 
-<h1>Reading University</h1>
+<h1>🏛 Book University</h1>
 
 <h2>Degree Application</h2>
 
-<form>
+<div id="application"></div>
 
-    <p>
-        <label for="level">Degree Level</label><br>
 
-        <select id="level">
+<script src="degreeCatalog.js"></script>
+<script src="apply.js"></script>
 
-            <option>Associate</option>
-            <option>Bachelor</option>
-            <option>Master</option>
-            <option>Doctorate</option>
-
-        </select>
-    </p>
-
-    <p>
-        <label for="major">Major</label><br>
-
-        <select id="major">
-
-            <option>Biology</option>
-            <option>History</option>
-            <option>Psychology</option>
-            <option>Literature</option>
-            <option>Philosophy</option>
-            <option>Other</option>
-
-        </select>
-    </p>
-
-    <p>
-        <label for="customMajor">If Other:</label><br>
-
-        <input
-            type="text"
-            id="customMajor"
-            placeholder="Type your custom major">
-    </p>
-
-    <button type="submit">
-
-        Continue to Degree Planner
-
-    </button>
-
-</form>
-<script>
-
-const major = document.getElementById("major");
-const custom = document.getElementById("customMajor");
-
-custom.style.display = "none";
-
-major.addEventListener("change", function(){
-
-    if(major.value === "Other"){
-        custom.style.display = "block";
-    }
-
-    else{
-        custom.style.display = "none";
-    }
-
-});
-
-</script>
 </body>
 </html>
