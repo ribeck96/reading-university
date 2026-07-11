@@ -1,4 +1,5 @@
 alert("catalog.js is working!");
+
 const catalog = document.getElementById("catalog");
 
 degreeCatalog.forEach(function(degree) {
