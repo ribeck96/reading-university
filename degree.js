@@ -43,6 +43,12 @@ if(degree){
             }).join("")}
         </ul>
 
+<a href="apply.html?id=${degree.id}">
+    <button>
+        Apply for this Degree
+    </button>
+</a>
+
     `;
 
 }
