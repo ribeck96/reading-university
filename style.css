@@ -56,3 +56,30 @@ button:hover {
 p {
     font-size: 1.1em;
 }
+.degreeCard {
+
+    background: white;
+
+    border: 2px solid #c9b27d;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 2px 2px 8px rgba(0,0,0,.15);
+
+}
+
+.degreeCard h2{
+
+    margin-top:0;
+
+}
+
+.degreeCard button{
+
+    margin-top:15px;
+
+}
