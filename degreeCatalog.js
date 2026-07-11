@@ -1,4 +1,6 @@
+const degrees = [
 {
+
     id: "assoc-biology",
 
     level: "Associate",
@@ -20,3 +22,4 @@
         "GEN101"
     ]
 }
+];
