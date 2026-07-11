@@ -90,8 +90,7 @@ function showDegrees(level, college){
         <h3>${level} Degrees</h3>
         <h4>${college}</h4>
 
-        <button onclick="showColleges('$
-    {level}')">
+        <button onclick="showColleges('${level}')">
             ← Back to Colleges
         </button>
     `;
