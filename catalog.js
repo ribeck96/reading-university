@@ -121,10 +121,12 @@ function showDegrees(level, college){
                 books required
             </p>
 
+        <a href="degree.html?id=${degree.id}">
             <button>
                 View Degree
             </button>
-
+        </a>
+        
         </div>
 
         `;
