@@ -1,6 +1,6 @@
 const catalog = document.getElementById("catalog");
 
-degrees.forEach(function(degree) {
+degreeCatalog.forEach(function(degree) {
 
     const card = document.createElement("div");
 
