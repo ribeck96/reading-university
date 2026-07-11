@@ -1,30 +1,22 @@
-const degrees = [
-
 {
+    id: "assoc-biology",
+
     level: "Associate",
-    major: "Biology",
-    books: 4,
-    description: "Study living things through fiction and nonfiction.",
-    suggested: [
-        "Animal Biology",
-        "Marine Biology",
-        "Genetics",
-        "General Education"
-    ]
-},
 
-{
-    level: "Bachelor",
-    major: "History",
-    books: 8,
-    description: "Explore humanity's past through historical works.",
+    college: "College of Natural Sciences",
+
+    degree: "Biology",
+
+    type: "Science",
+
+    books: 4,
+
+    description: "Study living things through fiction and nonfiction.",
+
     suggested: [
-        "Ancient",
-        "American",
-        "World",
-        "Research",
-        "Elective"
+        "BIO101",
+        "BIO120",
+        "BIO205",
+        "GEN101"
     ]
 }
-
-];
