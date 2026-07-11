@@ -39,15 +39,14 @@ if(degree){
         </h3>
 
 
-        <button>
-            Suggested Course Sequence
-        </button>
+<button onclick="showSuggested()">
+    Suggested Course Sequence
+</button>
 
 
-        <button>
-            Create My Own Sequence
-        </button>
-
+<button onclick="showCustom()">
+    Create My Own Sequence
+</button>
     `;
 
 }
