@@ -1,21 +1,39 @@
-const courses = [
+const courseCategories = {
 
-{
-    code: "BIO101",
-    name: "Animal Biology",
-    description: "Read books centered on animals."
-},
+    biologyElective: {
+        name: "Biology Elective",
+        options: [
+            "Animal Biology",
+            "Marine Biology",
+            "Botany",
+            "Ecology"
+        ]
+    },
 
-{
-    code: "BIO102",
-    name: "Marine Biology",
-    description: "Read books about oceans or marine life."
-},
+    genetics: {
+        name: "Genetics Requirement",
+        options: [
+            "Genetics",
+            "Family Saga",
+            "Books with Strong Family Themes"
+        ]
+    },
 
-{
-    code: "BIO103",
-    name: "Genetics",
-    description: "Read books focused on family, heredity, or ancestry."
-}
+    lifeScience: {
+        name: "Life Science Requirement",
+        options: [
+            "Animal Biology",
+            "Human Biology",
+            "Evolution",
+            "Microbiology"
+        ]
+    },
 
-];
+    generalEducation: {
+        name: "General Education",
+        options: [
+            "Any Degree Area"
+        ]
+    }
+
+};
