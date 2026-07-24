@@ -38,9 +38,9 @@ if(degree){
         </h3>
 
         <ul>
-            ${degree.suggested.map(function(course){
-                return `<li>${course}</li>`;
-            }).join("")}
+    ${degree.suggested.map(function(requirement){
+        return `<li>${requirement.requirement}</li>`;
+    }).join("")}
         </ul>
 
 <a href="apply.html?id=${degree.id}">
