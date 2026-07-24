@@ -8,15 +8,12 @@ const degrees = [
         type: "Science",
         books: 4,
         description: "Study living things through fiction and nonfiction.",
-    suggested: [
-    {
-        requirement: "Biology Elective",
-        options: [
-            "Animal Biology",
-            "Marine Biology",
-            "Botany",
-            "Ecology"
-        ]
+ suggested: [
+    "biologyElective",
+    "genetics",
+    "lifeScience",
+    "generalEducation"
+]
     },
 
     {
@@ -56,12 +53,11 @@ const degrees = [
         books: 8,
         description: "Explore humanity's past through historical works.",
         suggested: [
-            "Ancient History",
-            "American History",
-            "World History",
-            "Research",
-            "Elective"
-        ]
+    "ancientHistory",
+    "americanHistory",
+    "research",
+    "generalEducation"
+]
     }
 
 ];
