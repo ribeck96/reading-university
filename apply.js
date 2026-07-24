@@ -71,35 +71,35 @@ function showSuggested(){
 
     `;
 
-    degree.suggested.forEach(function(requirement){
+degree.suggested.forEach(function(categoryKey){
 
-        application.innerHTML += `
+    const category = courseCategories[categoryKey];
 
-            <div class="courseRequirement">
+    application.innerHTML += `
 
-                <h3>${requirement.requirement}</h3>
+        <div class="courseRequirement">
 
-                <select>
+            <h3>${category.name}</h3>
 
-                    ${requirement.options.map(function(option){
+            <select>
 
-                        return `
-                            <option>
-                                ${option}
-                            </option>
-                        `;
+                ${category.options.map(function(option){
 
-                    }).join("")}
+                    return `
+                        <option>${option}</option>
+                    `;
 
-                </select>
+                }).join("")}
 
-                <br><br>
+            </select>
 
-            </div>
+            <br><br>
 
-        `;
+        </div>
 
-    });
+    `;
+
+});
 
 
     application.innerHTML += `
