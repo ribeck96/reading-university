@@ -151,10 +151,27 @@ function showCustom(){
 
         <br><br>
 
-        <button>
-            Finalize Degree Plan
+        <button onclick="finalizePlan()">
+    Finalize Degree Plan
         </button>
 
     `;
+
+}
+function finalizePlan(){
+
+    let selections = [];
+
+    document.querySelectorAll(".courseChoice").forEach(function(choice){
+
+        selections.push({
+            requirement: choice.dataset.requirement,
+            bookCategory: choice.value
+        });
+
+    });
+
+
+    console.log(selections);
 
 }
