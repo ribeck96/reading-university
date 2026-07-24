@@ -100,7 +100,7 @@ degree.suggested.forEach(function(categoryKey){
 
     application.innerHTML += `
 
-        <button>
+        <button onclick="finalizePlan()">
             Finalize Degree Plan
         </button>
 
