@@ -8,41 +8,15 @@ const degrees = [
         type: "Science",
         books: 4,
         description: "Study living things through fiction and nonfiction.",
- suggested: [
-    "biologyElective",
-    "genetics",
-    "lifeScience",
-    "generalEducation"
-]
-    },
 
-    {
-        requirement: "Genetics Requirement",
-        options: [
-            "Genetics",
-            "Family Saga",
-            "Books with Strong Family Themes"
+        suggested: [
+            "biologyElective",
+            "genetics",
+            "lifeScience",
+            "generalEducation"
         ]
     },
 
-    {
-        requirement: "Life Science Requirement",
-        options: [
-            "Animal Biology",
-            "Human Biology",
-            "Evolution",
-            "Microbiology"
-        ]
-    },
-
-    {
-        requirement: "General Education",
-        options: [
-            "Any Degree Area"
-        ]
-    }
-]
-    },
 
     {
         id: "bachelor-history",
@@ -52,12 +26,14 @@ const degrees = [
         type: "Arts",
         books: 8,
         description: "Explore humanity's past through historical works.",
+
         suggested: [
-    "ancientHistory",
-    "americanHistory",
-    "research",
-    "generalEducation"
-]
+            "ancientHistory",
+            "americanHistory",
+            "research",
+            "generalEducation"
+        ]
     }
 
 ];
+
