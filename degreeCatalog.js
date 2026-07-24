@@ -8,12 +8,43 @@ const degrees = [
         type: "Science",
         books: 4,
         description: "Study living things through fiction and nonfiction.",
-        suggested: [
-            "BIO101",
-            "BIO120",
-            "BIO205",
-            "GEN101"
+    suggested: [
+    {
+        requirement: "Biology Elective",
+        options: [
+            "Animal Biology",
+            "Marine Biology",
+            "Botany",
+            "Ecology"
         ]
+    },
+
+    {
+        requirement: "Genetics Requirement",
+        options: [
+            "Genetics",
+            "Family Saga",
+            "Books with Strong Family Themes"
+        ]
+    },
+
+    {
+        requirement: "Life Science Requirement",
+        options: [
+            "Animal Biology",
+            "Human Biology",
+            "Evolution",
+            "Microbiology"
+        ]
+    },
+
+    {
+        requirement: "General Education",
+        options: [
+            "Any Degree Area"
+        ]
+    }
+]
     },
 
     {
