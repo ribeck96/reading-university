@@ -81,17 +81,13 @@ degree.suggested.forEach(function(categoryKey){
 
             <h3>${category.name}</h3>
 
-            <select>
-
-                ${category.options.map(function(option){
-
-                    return `
-                        <option>${option}</option>
-                    `;
-
-                }).join("")}
-
-            </select>
+           <select class="courseChoice" data-requirement="${category.name}">
+    ${category.options.map(function(option){
+        return `
+            <option>${option}</option>
+        `;
+    }).join("")}
+</select>
 
             <br><br>
 
