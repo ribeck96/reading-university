@@ -66,15 +66,43 @@ function showSuggested(){
         <h2>Suggested Course Sequence</h2>
 
         <p>
-            Customize this sequence before finalizing.
+            Customize your degree plan before finalizing.
         </p>
 
-        <ul>
-            ${degree.suggested.map(function(course){
-                return `<li>${course}</li>`;
-            }).join("")}
-        </ul>
+    `;
 
+    degree.suggested.forEach(function(requirement){
+
+        application.innerHTML += `
+
+            <div class="courseRequirement">
+
+                <h3>${requirement.requirement}</h3>
+
+                <select>
+
+                    ${requirement.options.map(function(option){
+
+                        return `
+                            <option>
+                                ${option}
+                            </option>
+                        `;
+
+                    }).join("")}
+
+                </select>
+
+                <br><br>
+
+            </div>
+
+        `;
+
+    });
+
+
+    application.innerHTML += `
 
         <button>
             Finalize Degree Plan
