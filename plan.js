@@ -30,19 +30,24 @@ if(savedPlan){
     `;
 
 
-    savedPlan.selections.forEach(function(course){
+savedPlan.selections.forEach(function(course){
 
-        plan.innerHTML += `
+    plan.innerHTML += `
+
+        <div class="planCourse">
+
+            <h3>${course.requirement}</h3>
 
             <p>
-                ☐ ${course.requirement}: 
-                ${course.bookCategory}
+                Reading Category:
+                <strong>${course.bookCategory}</strong>
             </p>
 
-        `;
+        </div>
 
-    });
+    `;
 
+});
 }
 else{
 
