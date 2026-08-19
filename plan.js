@@ -1,6 +1,6 @@
 
 const plan = document.getElementById("plan");
-
+const studentName = localStorage.getItem("studentName") || "";
 
 const savedPlan = JSON.parse(
     localStorage.getItem("degreePlan")
@@ -10,7 +10,9 @@ const savedPlan = JSON.parse(
 if(savedPlan){
 
     plan.innerHTML = `
-
+<h3>
+    Student: ${studentName || "____________________"}
+</h3>
         <h2>
             ${savedPlan.degree.level} of ${savedPlan.degree.type}
         </h2>
