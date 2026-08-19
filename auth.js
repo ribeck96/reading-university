@@ -57,3 +57,5 @@ function login(){
         });
 
 }
+window.login = login;
+window.register = register;
