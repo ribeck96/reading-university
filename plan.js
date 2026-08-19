@@ -17,14 +17,23 @@ if(savedPlan){
             ${savedPlan.degree.level} of ${savedPlan.degree.type}
         </h2>
 
-        <h3>
-            ${savedPlan.degree.degree}
-        </h3>
+<h3>
+    ${savedPlan.degree.degree}
+</h3>
 
-        <p>
-            ${savedPlan.degree.description}
-        </p>
+<p>
+    <strong>College:</strong>
+    ${savedPlan.degree.college}
+</p>
 
+<p>
+    <strong>Books Required:</strong>
+    ${savedPlan.degree.books}
+</p>
+
+<p>
+    ${savedPlan.degree.description}
+</p>
         <h3>
             Course Requirements
         </h3>
@@ -36,16 +45,25 @@ savedPlan.selections.forEach(function(course){
 
     plan.innerHTML += `
 
-        <div class="planCourse">
+<div class="planCourse">
 
-            <h3>${course.requirement}</h3>
+    <h3>${course.requirement}</h3>
 
-            <p>
-                Reading Category:
-                <strong>${course.bookCategory}</strong>
-            </p>
+    <p>
+        Reading Category:
+        <strong>${course.bookCategory}</strong>
+    </p>
 
-        </div>
+    <p>
+        Book:
+        ______________________________
+    </p>
+
+    <p>
+        Status: Not Completed
+    </p>
+
+</div>
 
     `;
 
