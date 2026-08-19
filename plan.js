@@ -58,3 +58,12 @@ else{
     `;
 
 }
+function saveStudentName(){
+
+    const name = document.getElementById("studentName").value;
+
+    localStorage.setItem("studentName", name);
+
+    location.reload();
+
+}
