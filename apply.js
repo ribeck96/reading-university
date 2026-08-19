@@ -172,6 +172,14 @@ function finalizePlan(){
     });
 
 
-    console.log(selections);
+    localStorage.setItem(
+    "degreePlan",
+    JSON.stringify({
+        degree: degree,
+        selections: selections
+    })
+);
+
+window.location.href = "plan.html";
 
 }
