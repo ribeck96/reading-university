@@ -100,3 +100,22 @@ p {
 .navbar a:hover {
     text-decoration: underline;
 }
+@media print {
+
+    .navbar,
+    button,
+    input,
+    label {
+        display: none;
+    }
+
+    body {
+        background: white;
+        margin: 40px;
+    }
+
+    #plan {
+        width: 100%;
+    }
+
+}
