@@ -1,8 +1,4 @@
 
-Riannon Beck <riannonbeck@gmail.com>
-11:37 AM (0 minutes ago)
-to me
-
 const plan = document.getElementById("plan");
 
 
