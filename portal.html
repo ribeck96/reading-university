@@ -9,7 +9,39 @@
 </head>
 
 <body>
+<div id="authArea">
 
+    <h2>Student Portal</h2>
+
+    <p>
+        Log in to access your degree plan and reading progress.
+    </p>
+
+    <label>
+        Email:
+        <input type="email" id="email">
+    </label>
+
+    <br><br>
+
+    <label>
+        Password:
+        <input type="password" id="password">
+    </label>
+
+    <br><br>
+
+    <button onclick="login()">
+        Log In
+    </button>
+
+    <button onclick="register()">
+        Create Account
+    </button>
+
+    <p id="authMessage"></p>
+
+</div>
 <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="catalog.html">Degree Catalog</a>
