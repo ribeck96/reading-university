@@ -116,43 +116,40 @@ function showCustom(){
 
         <h2>Create Your Course Sequence</h2>
 
-
         <p>
-            Enter your courses:
+            Create your own course requirements for this degree.
         </p>
-
 
         <label>
             Course 1:
-            <input type="text">
+            <input type="text" class="customCourse">
         </label>
 
         <br><br>
 
         <label>
             Course 2:
-            <input type="text">
+            <input type="text" class="customCourse">
         </label>
 
         <br><br>
 
         <label>
             Course 3:
-            <input type="text">
+            <input type="text" class="customCourse">
         </label>
 
         <br><br>
 
         <label>
             Course 4:
-            <input type="text">
+            <input type="text" class="customCourse">
         </label>
-
 
         <br><br>
 
-        <button onclick="finalizePlan()">
-    Finalize Degree Plan
+        <button onclick="finalizeCustomPlan()">
+            Finalize Degree Plan
         </button>
 
     `;
@@ -170,7 +167,36 @@ function finalizePlan(){
         });
 
     });
+function finalizeCustomPlan(){
 
+    let selections = [];
+
+    document.querySelectorAll(".customCourse").forEach(function(course, index){
+
+        if(course.value.trim() !== ""){
+
+            selections.push({
+                requirement: "Custom Course " + (index + 1),
+                bookCategory: course.value.trim()
+            });
+
+        }
+
+    });
+
+
+    localStorage.setItem(
+        "degreePlan",
+        JSON.stringify({
+            degree: degree,
+            selections: selections
+        })
+    );
+
+
+    window.location.href = "plan.html";
+
+}
 
     localStorage.setItem(
     "degreePlan",
