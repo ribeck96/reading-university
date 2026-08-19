@@ -167,6 +167,20 @@ function finalizePlan(){
         });
 
     });
+
+    localStorage.setItem(
+        "degreePlan",
+        JSON.stringify({
+            degree: degree,
+            selections: selections
+        })
+    );
+
+    window.location.href = "plan.html";
+
+}
+
+
 function finalizeCustomPlan(){
 
     let selections = [];
@@ -184,7 +198,17 @@ function finalizeCustomPlan(){
 
     });
 
+    localStorage.setItem(
+        "degreePlan",
+        JSON.stringify({
+            degree: degree,
+            selections: selections
+        })
+    );
 
+    window.location.href = "plan.html";
+
+}
     localStorage.setItem(
         "degreePlan",
         JSON.stringify({
