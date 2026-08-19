@@ -33,20 +33,18 @@ if(degree){
             ${degree.description}
         </p>
 
-
         <h3>
             Choose your course plan:
         </h3>
 
+        <button onclick="showSuggested()">
+            Suggested Course Sequence
+        </button>
 
-<button onclick="showSuggested()">
-    Suggested Course Sequence
-</button>
+        <button onclick="showCustom()">
+            Create My Own Sequence
+        </button>
 
-
-<button onclick="showCustom()">
-    Create My Own Sequence
-</button>
     `;
 
 }
@@ -59,6 +57,8 @@ else{
     `;
 
 }
+
+
 function showSuggested(){
 
     application.innerHTML = `
@@ -71,31 +71,39 @@ function showSuggested(){
 
     `;
 
-degree.suggested.forEach(function(categoryKey){
 
-    const category = courseCategories[categoryKey];
+    degree.suggested.forEach(function(categoryKey){
 
-    application.innerHTML += `
+        const category = courseCategories[categoryKey];
 
-        <div class="courseRequirement">
+        application.innerHTML += `
 
-            <h3>${category.name}</h3>
+            <div class="courseRequirement">
 
-           <select class="courseChoice" data-requirement="${category.name}">
-    ${category.options.map(function(option){
-        return `
-            <option>${option}</option>
+                <h3>${category.name}</h3>
+
+                <select
+                    class="courseChoice"
+                    data-requirement="${category.name}"
+                >
+
+                    ${category.options.map(function(option){
+
+                        return `
+                            <option>${option}</option>
+                        `;
+
+                    }).join("")}
+
+                </select>
+
+                <br><br>
+
+            </div>
+
         `;
-    }).join("")}
-</select>
 
-            <br><br>
-
-        </div>
-
-    `;
-
-});
+    });
 
 
     application.innerHTML += `
@@ -107,7 +115,6 @@ degree.suggested.forEach(function(categoryKey){
     `;
 
 }
-
 
 
 function showCustom(){
@@ -155,26 +162,40 @@ function showCustom(){
     `;
 
 }
+
+
 function finalizePlan(){
 
     let selections = [];
 
+
     document.querySelectorAll(".courseChoice").forEach(function(choice){
 
         selections.push({
+
             requirement: choice.dataset.requirement,
+
             bookCategory: choice.value
+
         });
 
     });
 
+
     localStorage.setItem(
+
         "degreePlan",
+
         JSON.stringify({
+
             degree: degree,
+
             selections: selections
+
         })
+
     );
+
 
     window.location.href = "plan.html";
 
@@ -185,51 +206,39 @@ function finalizeCustomPlan(){
 
     let selections = [];
 
+
     document.querySelectorAll(".customCourse").forEach(function(course, index){
 
         if(course.value.trim() !== ""){
 
             selections.push({
+
                 requirement: "Custom Course " + (index + 1),
+
                 bookCategory: course.value.trim()
+
             });
 
         }
 
     });
 
-    localStorage.setItem(
-        "degreePlan",
-        JSON.stringify({
-            degree: degree,
-            selections: selections
-        })
-    );
 
-    window.location.href = "plan.html";
-
-}
     localStorage.setItem(
+
         "degreePlan",
+
         JSON.stringify({
+
             degree: degree,
+
             selections: selections
+
         })
+
     );
 
 
     window.location.href = "plan.html";
-
-}
-
-    localStorage.setItem(
-    "degreePlan",
-    JSON.stringify({
-        degree: degree,
-        selections: selections
-    })
-);
-
-window.location.href = "plan.html";
 
 }
