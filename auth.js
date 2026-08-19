@@ -61,3 +61,13 @@ function login(){
 }
 window.login = login;
 window.register = register;
+onAuthStateChanged(auth, function(user){
+
+    if(user){
+
+        authMessage.textContent =
+            "You are logged in as " + user.email;
+
+    }
+
+});
