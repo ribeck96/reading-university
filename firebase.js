@@ -1,3 +1,10 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+
+import {
+    getAuth
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+
+
 const firebaseConfig = {
   apiKey: "AIzaSyB7qZaOR8YuM00vWqsr0fq8Rw6UMaLWgWA",
   authDomain: "stevens-university-4f6ea.firebaseapp.com",
@@ -6,3 +13,6 @@ const firebaseConfig = {
   messagingSenderId: "621087391900",
   appId: "1:621087391900:web:e7d0bf8f04fd03a9d1ad59"
 };
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
