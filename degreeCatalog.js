@@ -81,6 +81,162 @@ const degrees = [
        
         ]
     },
+        {
+        id: "assoc-classics",
+        level: "Associate",
+        college: "College of Humanities",
+        degree: "Classics",
+        type: "Humanities",
+        books: 4,
+        description: "Study the timeless works of ancient Greece and Rome.",
+
+        suggested: [
+       
+        ]
+    },
+        {
+        id: "assoc-history",
+        level: "Associate",
+        college: "College of Humanities",
+        degree: "History",
+        type: "Humanities",
+        books: 4,
+        description: "Discover the events that have lead us to where we are today.",
+
+        suggested: [
+       
+        ]
+    },
+        {
+        id: "assoc-philosophy",
+        level: "Associate",
+        college: "College of Humanities",
+        degree: "Philosophy",
+        type: "Humanities",
+        books: 4,
+        description: "The love of wisdom.",
+
+        suggested: [
+       
+        ]
+    },
+        {
+        id: "assoc-religion",
+        level: "Associate",
+        college: "College of Humanities",
+        degree: "Religion",
+        type: "Humanities",
+        books: 4,
+        description: "The study of world religion.",
+
+        suggested: [
+       
+        ]
+    },
+        {
+        id: "assoc-anthropology",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Anthropology",
+        type: "Social Science",
+        books: 4,
+        description: "The study of humanity.",
+
+        suggested: [
+       
+        ]
+    },
+        {
+        id: "assoc-psychology",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Psychology",
+        type: "Social Science",
+        books: 4,
+        description: "The study of the mind and behavior.",
+
+        suggested: [
+       
+        ]
+    },
+         {
+        id: "assoc-theology",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Theology",
+        type: "Social Science",
+        books: 4,
+        description: "The study of religion from a religious perspective. Choose one religion for this degree.",
+
+        suggested: [
+       
+        ]
+    },
+         {
+        id: "assoc-politics",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Political Science",
+        type: "Social Science",
+        books: 4,
+        description: "The study of governance and power.",
+
+        suggested: [
+       
+        ]
+    },
+             {
+        id: "assoc-journalism",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Journalism",
+        type: "Social Science",
+        books: 4,
+        description: "The study of information and events.",
+
+        suggested: [
+       
+        ]
+    },
+            {
+        id: "assoc-gender",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Gender Studies",
+        type: "Social Science",
+        books: 4,
+        description: "The study of gender roles and power dynamics.",
+
+        suggested: [
+       
+        ]
+    }, 
+             {
+        id: "assoc-global",
+        level: "Associate",
+        college: "College of Social Sciences",
+        degree: "Global Studies",
+        type: "Social Science",
+        books: 4,
+        description: "Study the world and learn about different cultures.",
+
+        suggested: [
+       
+        ]
+    },
+             {
+        id: "assoc-illustration",
+        level: "Associate",
+        college: "College of Fine Arts",
+        degree: "Illustration",
+        type: "Fine Arts",
+        books: 4,
+        description: "The art of drawing visual media.",
+
+        suggested: [
+       
+        ]
+    },
     {
         id: "bachelor-history",
         level: "Bachelor",
